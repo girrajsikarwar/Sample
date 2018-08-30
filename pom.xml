@@ -41,13 +41,6 @@
       <version>2.4</version>
       <type>maven-plugin</type>
         </dependency>
-	<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/sonar-maven-plugin -->
-	<dependency>
-	    <groupId>org.codehaus.mojo</groupId>
-	    <artifactId>sonar-maven-plugin</artifactId>
-	    <version>3.2</version>
-	    <type>pom</type>
-	</dependency>
   </dependencies>
   <build>
     <plugins>
@@ -146,9 +139,9 @@
  </configuration>
 </plugin>
 	    <plugin>
-       <groupId>org.codehaus.mojo</groupId>
-	    <artifactId>sonar-maven-plugin</artifactId>
-	    <version>3.2</version>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.2</version>
   </plugin>
 	    
 	    
