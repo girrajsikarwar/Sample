@@ -166,8 +166,8 @@
   </build>
 	<distributionManagement>
   <repository>
-    <id>MyRepo</id>
-    <url>http://localhost:6061/nexus/content/repositories/MyRepo</url>
+    <id>demoRepo</id>
+    <url>http://localhost:8081/nexus/content/repositories/demoRepo</url>
   </repository>
 </distributionManagement>
 </project>
