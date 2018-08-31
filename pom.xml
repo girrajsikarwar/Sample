@@ -43,34 +43,7 @@
         </dependency>
   </dependencies>
   <build>
-	 <pluginManagement>
     <plugins>
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.4.0.905</version>
-      </plugin>
-    </plugins>
-  </pluginManagement>
-    <plugins>
-      <plugin>
-	<groupId>org.codehaus.mojo</groupId>
-	<artifactId>exec-maven-plugin</artifactId>
-	<version>1.2.1</version>
-	<executions>
-	  <execution>
-	    <goals>
-	      <goal>java</goal>
-	    </goals>
-	  </execution>
-	</executions>
-	<configuration>
-	  <mainClass>com.mycompany.app.App</mainClass>
-	  <arguments>
-	    <argument>argument1</argument>
-	  </arguments>
-	</configuration>
-      </plugin>
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-shade-plugin</artifactId>
