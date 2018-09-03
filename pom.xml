@@ -43,27 +43,7 @@
         </dependency>
   </dependencies>
   <build>
-    <plugins>   
-      <plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-shade-plugin</artifactId>
-	<version>2.1</version>
-	<executions>
-	  <execution>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>shade</goal>
-	    </goals>
-	    <configuration>
-	      <transformers>
-		<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-		  <mainClass>com.mycompany.app.App</mainClass>
-		</transformer>
-	      </transformers>
-	    </configuration>
-	  </execution>
-	</executions>
-      </plugin>
+    <plugins>
       <plugin>
           <!-- This plugin will set the properties values using dependency information -->
           <groupId>org.apache.maven.plugins</groupId>
@@ -120,14 +100,11 @@
   <releaseProfiles>releases</releaseProfiles>
  </configuration>
 </plugin>
-	    <plugin>
+<plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
       <artifactId>sonar-maven-plugin</artifactId>
       <version>3.2</version>
-  </plugin>
-	    
-	    
-	    
+  </plugin>	    	    	    
     </plugins>
   </build>
 	<distributionManagement>
